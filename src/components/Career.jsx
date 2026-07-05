@@ -7,9 +7,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timelineData = [
   {
-    year: "2023",
+    year: "2020",
+    title: "Secondary Education",
+    subtitle: "Ramkrishna Vivekananda Mission Barrackpore",
+    desc: "Completed secondary education under West Bengal Board of Secondary Education.",
+    tags: ["School", "WBBSE"]
+  },
+  {
+    year: "2022",
+    title: "Higher Secondary Education",
+    subtitle: "Barrackpore Government High School",
+    desc: "Completed higher secondary education under West Bengal Council of Higher Secondary Education.",
+    tags: ["School", "WBCHSE"]
+  },
+  {
+    year: "2022-2025",
     title: "BSc Mathematics",
-    subtitle: "RKMVCC",
+    subtitle: "Ramakrishna Mission Vivekananda Centenary College, Rahara",
     desc: "Graduated with a Bachelor's degree in Mathematics, building strong analytical and quantitative skills.",
     tags: ["Graduation", "Mathematics"]
   },
@@ -35,9 +49,9 @@ const timelineData = [
     tags: ["GATE", "Achievement"]
   },
   {
-    year: "2026",
+    year: "2025-2027",
     title: "MSc Data Science & AI",
-    subtitle: "RKMVERI",
+    subtitle: "Ramakrishna Mission Vivekananda Educational and Research Institute, Balur",
     desc: "Pursuing master's with focus on deep learning, NLP, and reinforcement learning research.",
     tags: ["Deep Learning", "NLP", "Research"]
   }

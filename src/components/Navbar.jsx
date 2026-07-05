@@ -19,7 +19,25 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      const offset = 150;
+      let current = 'Home';
+      const sections = [
+        { id: 'about', name: 'About' },
+        { id: 'career', name: 'Career' },
+        { id: 'certifications', name: 'Certs' },
+        { id: 'projects', name: 'Projects' },
+      ];
+      for (const { id, name } of sections) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= offset) {
+          current = name;
+        }
+      }
+      setActiveLink(current);
     };
+
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

@@ -7,8 +7,8 @@ const projectData = [
   {
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800",
     title: "ScenGen",
-    tags: ["LLM", "Computer Vision", "OCR", "Multi-Agent", "ADB"],
-    category: "Computer Vision",
+    tags: ["LLM", "Emerging Technology", "OCR", "Multi-Agent", "ADB"],
+    category: "Emerging Technology",
     link: "https://github.com/Sahityabiswas/ScenGen",
     github: "https://github.com/Sahityabiswas/ScenGen",
     desc: "LLM-guided Android GUI automation framework for intelligent scenario-based testing.",
@@ -35,7 +35,7 @@ const projectData = [
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
     title: "JOB_NEXUS",
     tags: ["Apache Spark", "Neo4j", "NLP", "Streamlit", "Python"],
-    category: "Data Engineering",
+    category: "Recommendation System",
     link: "https://github.com/Sahityabiswas/JOB_NEXUS",
     github: "https://github.com/Sahityabiswas/JOB_NEXUS",
     desc: "Distributed career recommendation platform with graph databases and semantic matching.",
@@ -51,7 +51,7 @@ const projectData = [
   },
 ];
 
-const categories = ["All", "Deep Learning", "Computer Vision", "Reinforcement Learning", "Machine Learning", "Data Engineering"];
+const categories = ["All", "Deep Learning", "Emerging Technology", "Reinforcement Learning", "Machine Learning", "Recommendation System"];
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");

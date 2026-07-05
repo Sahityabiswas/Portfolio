@@ -20,7 +20,7 @@ export default function About() {
     {
       icon: <FiBookOpen size={20} />,
       title: "Education",
-      desc: "MSc Data Science & AI, RKMVERI | BSc Mathematics, RKMVCC",
+      desc: "MSc Data Science & AI, RKMVERI, Balur | BSc Mathematics, RKMVCC, Rahara",
     },
     {
       icon: <FiAward size={20} />,
@@ -69,7 +69,7 @@ export default function About() {
 
                 <div className="robotic-section">
                     <p className="text-gray-400 text-sm md:text-md lg:text-xl font-light leading-relaxed max-w-2xl">
-                        Mathematics graduate pursuing <span className="text-white font-medium">MSc in Data Science and AI</span> at RKMVERI, 
+                        Mathematics graduate pursuing <span className="text-white font-medium">MSc in Data Science and AI</span> at Ramakrishna Mission Vivekananda Educational and Research Institute, Balur, 
                         with hands-on experience building AI systems across deep learning, NLP, and reinforcement learning. 
                         I move comfortably from theory to implementation — designing, training, and evaluating models that solve real problems.
                     </p>

@@ -188,7 +188,7 @@ const Footer = () => {
             </div>
             <div className="hidden md:block w-[1px] h-3 bg-white/10"></div>
             <div className="text-[10px] text-gray-600 tracking-[0.3em] font-mono uppercase">
-              RKMVERI // DS_AI
+              RKMVERI, Balur // DS_AI
             </div>
           </div>
 

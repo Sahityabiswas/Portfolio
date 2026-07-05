@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink, FiChevronDown, FiTag, FiStar, FiLayers, FiBookOpen, FiCpu, FiCode, FiBarChart2, FiAlertTriangle, FiZap } from "react-icons/fi";
 import caseStudyData from "../data/caseStudyData";
 
-const categories = ["All", "Deep Learning", "Computer Vision", "Reinforcement Learning", "Machine Learning", "Data Engineering"];
+const categories = ["All", "Deep Learning", "Emerging Technology", "Reinforcement Learning", "Machine Learning", "Recommendation System"];
 
 const iconMap = {
   features: FiStar,

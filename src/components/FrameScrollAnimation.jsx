@@ -30,7 +30,7 @@ const FrameScrollAnimation = () => {
           className="absolute inset-x-0 top-[50%] -translate-y-1/2 flex flex-col items-center justify-center text-center pointer-events-none z-[60]"
         >
           <h3 className="text-white text-4xl md:text-8xl font-black uppercase tracking-tighter mb-2 drop-shadow-2xl">
-            Welcome to my <span className="text-blue-500">Projects</span>
+            Welcome to my <span className="text-blue-500">Portfolio</span>
           </h3>
           <p className="text-blue-400 font-mono tracking-[0.6em] uppercase text-[12px] opacity-70">
             Core System Interface
