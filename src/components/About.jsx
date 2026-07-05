@@ -48,7 +48,7 @@ export default function About() {
         {/* --- STATIC FRAME IMAGE (LEFT 45%) --- */}
         <div className="absolute inset-y-0 left-0 w-[45%] z-10 pointer-events-none overflow-hidden hidden lg:block" style={{ WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)', maskImage: 'linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)' }}>
             <img 
-               src="/profile.jpg" 
+               src={`${import.meta.env.BASE_URL}profile.jpg`} 
                alt="Profile" 
                className="w-full h-full object-cover opacity-60 grayscale" 
             />
@@ -112,7 +112,7 @@ export default function About() {
                         <FiEye size={16} />
                     </button>
                     <a 
-                        href="/resume.pdf" 
+                        href={`${import.meta.env.BASE_URL}resume.pdf`} 
                         className="inline-flex items-center space-x-4 px-8 py-4 bg-blue-600 text-white font-bold text-xs uppercase tracking-widest hover:bg-blue-700 transition-all duration-300 rounded-full shadow-lg shadow-blue-900/20"
                     >
                         <span>Download</span>
@@ -130,7 +130,7 @@ export default function About() {
                                 <FiX size={20} />
                             </button>
                             <iframe
-                                src="/resume.pdf#view=FitH"
+                                src={`${import.meta.env.BASE_URL}resume.pdf#view=FitH`}
                                 className="w-full h-full"
                                 title="Resume Preview"
                             />

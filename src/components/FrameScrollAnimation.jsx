@@ -20,7 +20,7 @@ const FrameScrollAnimation = () => {
         <motion.div 
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{ 
-            backgroundImage: "url(/images/bg-welcome.jpg)",
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/bg-welcome.jpg)`,
             opacity: useTransform(smoothProgress, [0, 0.3, 0.45], [0, 0.5, 0.6])
           }}
         />

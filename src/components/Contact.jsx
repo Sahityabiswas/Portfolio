@@ -17,7 +17,7 @@ const Contact = () => {
 
   const frameCount = 160;
   const imagesRef = useRef([]);
-  const currentFrame = (index) => `/image3/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`;
+  const currentFrame = (index) => `${import.meta.env.BASE_URL}image3/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`;
 
   useEffect(() => {
     for (let i = 0; i < frameCount; i++) {

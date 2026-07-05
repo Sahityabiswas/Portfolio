@@ -50,7 +50,7 @@ export default function Hero() {
   const { text: typedText } = useTypewriter(subtitleTexts, { delay: 2500 });
 
   const frameCount = 240;
-  const currentFrame = (index) => `/images/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`;
+  const currentFrame = (index) => `${import.meta.env.BASE_URL}images/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`;
   
   const imagesRef = useRef([]);
   const seqRef = useRef({ frame: 0 });
