@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 export default function SEO() {
   const title = "Sahitya Biswas | Data Scientist & AI Engineer";
   const desc = "Mathematics graduate pursuing MSc in Data Science and AI. Building AI systems across deep learning, NLP, and reinforcement learning.";
-  const url = "https://sahityabiswas.dev";
+  const url = "https://sahityabiswas.github.io/Portfolio";
   const image = `${import.meta.env.BASE_URL}profile.jpg`;
 
   return (

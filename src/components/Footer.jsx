@@ -31,7 +31,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: <FiGithub />, label: 'GITHUB', url: 'https://github.com/Sahityabiswas', color: 'hover:text-red-500' },
-    { icon: <FiLinkedin />, label: 'LINKEDIN', url: 'https://www.linkedin.com/in/mathdsai55', color: 'hover:text-blue-500' },
+    { icon: <FiLinkedin />, label: 'LINKEDIN', url: 'https://www.linkedin.com/in/sahityabiswas', color: 'hover:text-blue-500' },
     { icon: <FiMail />, label: 'EMAIL', url: 'mailto:hereissahityadeybiswas@gmail.com', color: 'hover:text-cyan-400' },
   ];
 
