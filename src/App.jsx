@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HelmetProvider } from 'react-helmet-async';
+import ErrorBoundary from './components/ErrorBoundary';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import ScrollProgressBar from './components/ScrollProgressBar';
@@ -38,25 +39,27 @@ function App() {
   return (
     <HelmetProvider>
       <ThemeProvider>
-        <SEO />
-        <ParticleBackground />
-        <ScrollProgressBar />
-        <CursorFollower />
-        <Navbar />
-        <Hero />
+        <ErrorBoundary>
+          <SEO />
+          <ParticleBackground />
+          <ScrollProgressBar />
+          <CursorFollower />
+          <Navbar />
+          <Hero />
 
-        <Suspense fallback={<div className="h-screen bg-[#020202]" />}>
-          <FrameScrollAnimation />
-          <AnimatedSection><About /></AnimatedSection>
-          <AnimatedSection><Career /></AnimatedSection>
-          <AnimatedSection><Certifications /></AnimatedSection>
-          <AnimatedSection><ProjectCaseStudy /></AnimatedSection>
-          <TechMarquee />
-          <AnimatedSection><Contact /></AnimatedSection>
-          <Footer />
-        </Suspense>
+          <Suspense fallback={<div className="h-screen bg-[#020202]" />}>
+            <FrameScrollAnimation />
+            <AnimatedSection><About /></AnimatedSection>
+            <AnimatedSection><Career /></AnimatedSection>
+            <AnimatedSection><Certifications /></AnimatedSection>
+            <AnimatedSection><ProjectCaseStudy /></AnimatedSection>
+            <TechMarquee />
+            <AnimatedSection><Contact /></AnimatedSection>
+            <Footer />
+          </Suspense>
 
-        <ScrollToTop />
+          <ScrollToTop />
+        </ErrorBoundary>
       </ThemeProvider>
     </HelmetProvider>
   );
