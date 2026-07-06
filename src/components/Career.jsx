@@ -28,27 +28,6 @@ const timelineData = [
     tags: ["Graduation", "Mathematics"]
   },
   {
-    year: "2024",
-    title: "MTTS 2024",
-    subtitle: "Summer Training in Mathematics",
-    desc: "Completed intensive summer training internship in mathematics at MTTS 2024 program.",
-    tags: ["Training", "Mathematics"]
-  },
-  {
-    year: "2024",
-    title: "IYMC Bronze Honour",
-    subtitle: "International Youth Math Challenge",
-    desc: "Awarded Bronze Honour at the International Youth Math Challenge, demonstrating excellence in mathematics.",
-    tags: ["Award", "Mathematics"]
-  },
-  {
-    year: "2025",
-    title: "GATE 2025 Qualified",
-    subtitle: "Data Science & AI",
-    desc: "Qualified GATE 2025 in Data Science and Artificial Intelligence with strong theoretical foundation.",
-    tags: ["GATE", "Achievement"]
-  },
-  {
     year: "2025-2027",
     title: "MSc Data Science & AI",
     subtitle: "Ramakrishna Mission Vivekananda Educational and Research Institute, Balur",

@@ -6,16 +6,23 @@ const certs = [
   {
     title: "MTTS 2024",
     subtitle: "Summer Training in Mathematics",
-    desc: "Intensive summer training internship in mathematics covering advanced topics in analysis, algebra, and topology.",
+    desc: "Completed intensive summer training internship in mathematics at MTTS 2024 program.",
     tags: ["Training", "Mathematics"],
     year: "2024",
   },
   {
     title: "IYMC Bronze Honour",
     subtitle: "International Youth Math Challenge",
-    desc: "Awarded Bronze Honour at the International Youth Math Challenge, demonstrating excellence in mathematical problem-solving.",
+    desc: "Awarded Bronze Honour at the International Youth Math Challenge, demonstrating excellence in mathematics.",
     tags: ["Award", "Mathematics"],
     year: "2024",
+  },
+  {
+    title: "GATE 2025 Qualified",
+    subtitle: "Data Science & AI",
+    desc: "Qualified GATE 2025 in Data Science and Artificial Intelligence with strong theoretical foundation.",
+    tags: ["GATE", "Achievement"],
+    year: "2025",
   }
 ];
 
