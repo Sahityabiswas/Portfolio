@@ -9,6 +9,9 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        navigateFallbackDenylist: [/\.pdf$/],
+      },
       includeAssets: ['favicon.svg', 'profile.jpg'],
       manifest: {
         name: 'Sahitya Biswas | Data Scientist & AI Engineer',
