@@ -120,10 +120,10 @@ const Contact = () => {
           </motion.div>
         </div>
 
-        <div className="absolute top-10 left-10 w-24 h-24 border-t border-l border-blue-500/20" />
-        <div className="absolute top-10 right-10 w-24 h-24 border-t border-r border-blue-500/20" />
-        <div className="absolute bottom-10 left-10 w-24 h-24 border-b border-l border-blue-500/20" />
-        <div className="absolute bottom-10 right-10 w-24 h-24 border-b border-r border-blue-500/20" />
+        <div className="hidden md:block absolute top-10 left-10 w-24 h-24 border-t border-l border-blue-500/20" />
+        <div className="hidden md:block absolute top-10 right-10 w-24 h-24 border-t border-r border-blue-500/20" />
+        <div className="hidden md:block absolute bottom-10 left-10 w-24 h-24 border-b border-l border-blue-500/20" />
+        <div className="hidden md:block absolute bottom-10 right-10 w-24 h-24 border-b border-r border-blue-500/20" />
 
         <div className="absolute top-12 left-12 flex items-center space-x-3">
            <FiActivity className="text-blue-400 text-xs animate-pulse" />
@@ -196,7 +196,7 @@ const Contact = () => {
                 whileHover={{ scale: 1.05, boxShadow: "0 0 50px rgba(59,130,246,0.3)" }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="group flex items-center space-x-6 bg-blue-600 text-white font-black text-[11px] uppercase tracking-[0.6em] px-24 py-6 shadow-2xl transition-all"
+                className="group flex items-center justify-center space-x-6 bg-blue-600 text-white font-black text-[11px] uppercase tracking-[0.6em] px-8 md:px-24 py-6 shadow-2xl transition-all w-full md:w-auto"
               >
                 <span>TRANSMIT</span>
                 <FiSend className="text-lg transition-transform group-hover:translate-x-1" />

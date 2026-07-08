@@ -81,9 +81,6 @@ export default function Hero() {
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     
-    canvas.width = 1920;
-    canvas.height = 1080;
-
     const render = () => {
         if (!canvasRef.current || !imagesRef.current.length) return;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -99,7 +96,14 @@ export default function Hero() {
         }
     };
 
-    render();
+    const resizeCanvas = () => {
+        canvas.width = window.innerWidth * window.devicePixelRatio;
+        canvas.height = window.innerHeight * window.devicePixelRatio;
+        render();
+    };
+
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
 
     const bootTl = gsap.timeline({ delay: 0.5 });
 
@@ -175,6 +179,7 @@ export default function Hero() {
     );
 
     return () => {
+        window.removeEventListener("resize", resizeCanvas);
         ScrollTrigger.getAll().forEach(t => t.kill());
     };
   }, [ready]);
@@ -184,16 +189,16 @@ export default function Hero() {
         
         <div className="portfolio-ui absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         <div className="portfolio-ui noise-overlay absolute inset-0 z-0 pointer-events-none mix-blend-overlay opacity-0" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
-        <div className="portfolio-ui center-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none opacity-0 mix-blend-screen z-[1]"></div>
+        <div className="hidden md:block portfolio-ui center-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none opacity-0 mix-blend-screen z-[1]"></div>
 
         <ParticleBackground />
 
-        <div className="portfolio-ui absolute top-28 left-8 md:top-32 md:left-12 z-[60] font-mono text-[10px] text-blue-400 tracking-widest flex flex-col space-y-1.5 pointer-events-none">
+        <div className="hidden sm:block portfolio-ui absolute top-28 left-8 md:top-32 md:left-12 z-[60] font-mono text-[10px] text-blue-400 tracking-widest flex flex-col space-y-1.5 pointer-events-none">
             <span className="hud-element opacity-0">&gt; SYSTEM ONLINE</span>
             <span className="hud-element opacity-0">&gt; INITIALIZING PORTFOLIO v2.0</span>
             <span className="hud-element opacity-0">&gt; NEURAL LINK ESTABLISHED</span>
         </div>
-        <div className="portfolio-ui absolute bottom-12 right-8 md:bottom-12 md:right-12 z-[60] font-mono text-[10px] text-gray-600 tracking-widest text-right flex flex-col space-y-1.5 pointer-events-none">
+        <div className="hidden sm:block portfolio-ui absolute bottom-12 right-8 md:bottom-12 md:right-12 z-[60] font-mono text-[10px] text-gray-600 tracking-widest text-right flex flex-col space-y-1.5 pointer-events-none">
             <span className="hud-element opacity-0">SYS_ID: DS_AI_55</span>
             <span className="hud-element opacity-0">COORD: 22.5726 N / 88.3639 E</span>
         </div>
@@ -212,7 +217,7 @@ export default function Hero() {
             className="absolute top-0 left-0 w-full h-full object-cover z-10 opacity-0 scale-95"
         />
 
-        <div className="portfolio-ui absolute inset-0 z-[50] pointer-events-none flex flex-col md:flex-row justify-between items-center md:items-center px-8 md:px-[15%] lg:px-[18%] pt-32 pb-16 md:pt-0 pb-0">
+        <div className="portfolio-ui absolute inset-0 z-[50] pointer-events-none flex flex-col md:flex-row justify-between items-center md:items-center px-8 md:px-[15%] lg:px-[18%] pt-20 md:pt-0 pb-16">
             <div className="content-text w-full md:w-[35%] flex flex-col items-center md:items-start text-center md:text-left md:-ml-[12%]">
                 <div className="mb-4">
                     <h1 className="name-text text-5xl md:text-6xl lg:text-7xl font-sans font-bold text-white tracking-[0.1em] uppercase leading-none" style={{ textShadow: "0 0 20px rgba(255,255,255,0.2)" }}>

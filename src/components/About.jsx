@@ -95,7 +95,7 @@ export default function About() {
                                 <div className="text-gray-500 group-hover:text-blue-400 transition-colors">
                                     {tool.icon}
                                 </div>
-                                <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[9px] font-mono py-1.5 px-3 rounded-md opacity-0 group-hover:opacity-100 transition-all pointer-events-none z-[70] whitespace-nowrap shadow-xl">
+                                <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[9px] font-mono py-1.5 px-3 rounded-md opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all pointer-events-none z-[70] whitespace-nowrap shadow-xl">
                                     {tool.title}
                                 </span>
                             </div>
