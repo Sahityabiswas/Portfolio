@@ -59,7 +59,7 @@ export default function Navbar() {
                 <span className="text-white text-xl font-black tracking-[0.2em] uppercase leading-none">
                     SAHITYA<span className="text-blue-500 animate-pulse ml-0.5">.</span>
                 </span>
-                <span className="text-[9px] md:text-[8px] font-mono text-blue-400 mt-1 opacity-60 tracking-[0.3em] uppercase">SYSTEM ONLINE</span>
+                <span className="text-[8px] font-mono text-blue-400 mt-1 opacity-60 tracking-[0.3em] uppercase">SYSTEM ONLINE</span>
             </div>
           </div>
 
