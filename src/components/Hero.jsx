@@ -233,11 +233,11 @@ export default function Hero() {
                         Mathematics graduate pursuing MSc in Data Science and AI. Building AI systems across deep learning, NLP, and reinforcement learning.
                     </p>
                 </div>
-                <div className="pointer-events-auto">
+                <a href="#projects" className="pointer-events-auto">
                     <div className="btn-text inline-flex items-center px-8 py-3 border border-gray-700 bg-black/50 hover:bg-black/80 hover:border-blue-500/50 transition-colors cursor-pointer rounded-sm backdrop-blur-md group">
                         <span className="text-gray-300 font-mono tracking-widest uppercase text-xs group-hover:text-white transition-colors">Explore Work</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
