@@ -2,6 +2,7 @@ const caseStudyData = [
   {
     id: "aerometric",
     title: "AEROMETRIC",
+    subtitle: "AQI Prediction System",
     category: "Machine Learning",
     image: "https://images.unsplash.com/photo-1611273426858-450d1f6047f0?auto=format&fit=crop&q=80&w=800",
     link: "https://github.com/Sahityabiswas/AEROMETRIC",
@@ -109,6 +110,7 @@ separate lag-only XGBoost model handles 7-day-ahead forecasting.`,
   {
     id: "campusbridge",
     title: "CAMPUSBRIDGE",
+    subtitle: "Student Management MCP",
     category: "Emerging Technology",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?auto=format&fit=crop&q=80&w=800",
     link: "https://github.com/Sahityabiswas/CAMPUSBRIDGE",
@@ -208,6 +210,7 @@ Each lives in one place, so scope checks aren't duplicated across every tool.
   {
     id: "cityflow",
     title: "CITYFLOW",
+    subtitle: "Smart City Traffic Light Control",
     category: "Reinforcement Learning",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800",
     link: "https://github.com/Sahityabiswas/CITYFLOW",
@@ -311,6 +314,7 @@ Hyperparameters:
   {
     id: "scengen",
     title: "ScenGen",
+    subtitle: "Automated GUI Testing Framework",
     category: "Emerging Technology",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800",
     link: "https://github.com/Sahityabiswas/ScenGen",
@@ -440,6 +444,7 @@ Action Schema
   {
     id: "jobnexus",
     title: "JOB_NEXUS",
+    subtitle: "Career Recommendation Engine",
     category: "Recommendation System",
     image: "https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?auto=format&fit=crop&q=80&w=800",
     link: "https://github.com/Sahityabiswas/JOB_NEXUS",
@@ -536,6 +541,7 @@ raw text → tokenization → POS tagging → NER → dependency parse → noun-
   {
     id: "gesture2sentence",
     title: "Gesture2Sentence",
+    subtitle: "Sign Language Sentence Generation",
     category: "Deep Learning",
     image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800",
     link: "https://github.com/Sahityabiswas/Gesture2Sentence",

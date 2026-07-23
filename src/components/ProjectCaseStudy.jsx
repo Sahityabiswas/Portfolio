@@ -164,9 +164,12 @@ const ProjectCard = React.memo(({ project }) => {
           <div className="flex flex-wrap gap-1.5 mb-3">
             {project.tags.map(tag => <TagBadge key={tag} tag={tag} />)}
           </div>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tighter uppercase mb-2">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tighter uppercase mb-1">
             {project.title}<span className="text-blue-500">.</span>
           </h3>
+          <p className="text-gray-400 text-xs md:text-sm font-light tracking-wide mb-2">
+            {project.subtitle}
+          </p>
           <p className="text-blue-400 font-mono text-[10px] uppercase tracking-[0.3em] mb-3">
             {project.category} · {project.duration} · {project.teamSize}
           </p>
