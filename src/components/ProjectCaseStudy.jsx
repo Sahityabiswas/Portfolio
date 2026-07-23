@@ -1,7 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink, FiChevronDown, FiTag, FiStar, FiLayers, FiBookOpen, FiCpu, FiCode, FiBarChart2, FiAlertTriangle, FiZap } from "react-icons/fi";
 import caseStudyData from "../data/caseStudyData";
+
+function MermaidDiagram({ chart }) {
+  const ref = useRef(null);
+  const idRef = useRef("mermaid-" + Math.random().toString(36).slice(2));
+
+  useEffect(() => {
+    if (!window.mermaid) {
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js";
+      script.onload = () => {
+        window.mermaid.initialize({
+          startOnLoad: false,
+          theme: "dark",
+          themeVariables: {
+            background: "#020202",
+            primaryColor: "#1e3a5f",
+            primaryBorderColor: "#3b82f6",
+            primaryTextColor: "#e5e7eb",
+            secondaryColor: "#1f2937",
+            tertiaryColor: "#111827",
+            lineColor: "#4b5563"
+          }
+        });
+        renderChart();
+      };
+      document.head.appendChild(script);
+    } else {
+      renderChart();
+    }
+  }, [chart]);
+
+  function renderChart() {
+    if (ref.current && window.mermaid && chart) {
+      try {
+        window.mermaid.render(idRef.current, chart).then((result) => {
+          ref.current.innerHTML = result.svg;
+        });
+      } catch (e) {
+        ref.current.textContent = chart;
+      }
+    }
+  }
+
+  return <div ref={ref} className="flex justify-center bg-black/30 p-4 rounded-lg overflow-x-auto" />;
+}
 
 const categories = ["All", "Deep Learning", "Emerging Technology", "Reinforcement Learning", "Machine Learning", "Recommendation System"];
 
@@ -198,9 +243,7 @@ const ProjectCard = React.memo(({ project }) => {
         {/* System Architecture */}
         {project.architecture && (
           <Section title="System Architecture" icon={iconMap.architecture}>
-            <div className="text-[10px] md:text-[11px] font-mono text-gray-500 leading-relaxed bg-black/30 p-4 rounded-lg overflow-x-auto whitespace-pre-wrap">
-              {renderBold(project.architecture)}
-            </div>
+            <MermaidDiagram chart={project.architecture} />
           </Section>
         )}
 
