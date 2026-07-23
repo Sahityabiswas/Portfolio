@@ -28,12 +28,12 @@ const certs = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="relative w-full bg-[#020202] py-24 px-6 md:px-12 overflow-hidden">
+    <section id="certifications" className="relative w-full bg-[#020202] py-16 md:py-24 px-4 md:px-12 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

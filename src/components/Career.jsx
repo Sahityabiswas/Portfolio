@@ -61,20 +61,20 @@ export default function Career() {
     <section
       id="career"
       ref={sectionRef}
-      className="relative w-full bg-[#020202] pt-24 pb-40 px-6 md:px-12"
+      className="relative w-full bg-[#020202] pt-16 md:pt-24 pb-20 md:pb-40 px-4 md:px-12"
     >
       <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <p className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.5em] mb-4">CAREER PATH</p>
-          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white tracking-tighter uppercase">
             My Journey<span className="text-blue-500">.</span>
           </h2>
         </motion.div>

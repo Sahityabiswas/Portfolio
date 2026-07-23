@@ -188,17 +188,17 @@ export default function Hero() {
 
         <ParticleBackground />
 
-        <div className="portfolio-ui absolute top-28 left-8 md:top-32 md:left-12 z-[60] font-mono text-[10px] text-blue-400 tracking-widest flex flex-col space-y-1.5 pointer-events-none">
+        <div className="portfolio-ui absolute top-20 left-6 md:top-32 md:left-12 z-[60] font-mono text-[10px] text-blue-400 tracking-widest flex-col space-y-1.5 pointer-events-none hidden md:flex">
             <span className="hud-element opacity-0">&gt; SYSTEM ONLINE</span>
             <span className="hud-element opacity-0">&gt; INITIALIZING PORTFOLIO v2.0</span>
             <span className="hud-element opacity-0">&gt; NEURAL LINK ESTABLISHED</span>
         </div>
-        <div className="portfolio-ui absolute bottom-12 right-8 md:bottom-12 md:right-12 z-[60] font-mono text-[10px] text-gray-600 tracking-widest text-right flex flex-col space-y-1.5 pointer-events-none">
+        <div className="portfolio-ui absolute bottom-10 right-6 md:bottom-12 md:right-12 z-[60] font-mono text-[10px] text-gray-600 tracking-widest text-right flex-col space-y-1.5 pointer-events-none hidden md:flex">
             <span className="hud-element opacity-0">SYS_ID: DS_AI_55</span>
             <span className="hud-element opacity-0">COORD: 22.5726 N / 88.3639 E</span>
         </div>
 
-        <div className="portfolio-ui absolute bottom-12 left-8 md:left-12 z-[60] flex flex-col space-y-5">
+        <div className="portfolio-ui absolute bottom-10 left-6 md:bottom-12 md:left-12 z-[60] flex flex-col space-y-5">
             <a href="https://github.com/Sahityabiswas" target="_blank" rel="noreferrer" className="social-icon opacity-0 text-gray-500 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] transition-all">
                 <svg className="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
@@ -212,10 +212,10 @@ export default function Hero() {
             className="absolute top-0 left-0 w-full h-full object-cover z-10 opacity-0 scale-95"
         />
 
-        <div className="portfolio-ui absolute inset-0 z-[50] pointer-events-none flex flex-col md:flex-row justify-between items-center md:items-center px-8 md:px-[15%] lg:px-[18%] pt-32 pb-16 md:pt-0 pb-0">
+        <div className="portfolio-ui absolute inset-0 z-[50] pointer-events-none flex flex-col md:flex-row justify-between items-center md:items-center px-6 sm:px-8 md:px-[15%] lg:px-[18%] pt-24 sm:pt-32 pb-12 md:pt-0 md:pb-0">
             <div className="content-text w-full md:w-[35%] flex flex-col items-center md:items-start text-center md:text-left md:-ml-[12%]">
                 <div className="mb-4">
-                    <h1 className="name-text text-5xl md:text-6xl lg:text-7xl font-sans font-bold text-white tracking-[0.1em] uppercase leading-none" style={{ textShadow: "0 0 20px rgba(255,255,255,0.2)" }}>
+                    <h1 className="name-text text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-bold text-white tracking-[0.1em] uppercase leading-none" style={{ textShadow: "0 0 20px rgba(255,255,255,0.2)" }}>
                         SAHITYA BISWAS
                     </h1>
                 </div>
@@ -227,9 +227,9 @@ export default function Hero() {
                     <div className="absolute bottom-0 left-0 w-full h-[1px] bg-white/60"></div>
                 </div>
             </div>
-            <div className="content-text w-full md:w-[45%] flex flex-col items-center md:items-start text-center md:text-left mt-16 md:mt-0 md:pl-64">
-                <div className="mb-8">
-                    <p className="desc-text text-gray-400 text-sm md:text-sm lg:text-base font-light tracking-wide leading-relaxed">
+            <div className="content-text w-full md:w-[45%] flex flex-col items-center md:items-start text-center md:text-left mt-8 sm:mt-12 md:mt-0 md:pl-64">
+                <div className="mb-6 md:mb-8">
+                    <p className="desc-text text-gray-400 text-xs sm:text-sm md:text-sm lg:text-base font-light tracking-wide leading-relaxed max-w-sm md:max-w-none">
                         Mathematics graduate pursuing MSc in Data Science and AI. Building AI systems across deep learning, NLP, and reinforcement learning.
                     </p>
                 </div>

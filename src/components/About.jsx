@@ -39,7 +39,7 @@ export default function About() {
   ];
 
   return (
-    <div id="about" className="relative w-full min-h-screen bg-[#020202] overflow-hidden flex items-center justify-center font-sans tracking-wide py-20 px-6 md:px-12">
+    <div id="about" className="relative w-full min-h-screen bg-[#020202] overflow-hidden flex items-center justify-center font-sans tracking-wide py-12 md:py-20 px-4 md:px-12">
         
         {/* --- BG EFFECTS --- */}
         <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
@@ -59,10 +59,10 @@ export default function About() {
             
             <div className="hidden lg:block w-[35%] h-full"></div>
 
-            <div className="w-full lg:w-[65%] flex flex-col space-y-10 pointer-events-auto bg-black/40 backdrop-blur-sm p-8 md:p-12 border border-white/5 rounded-2xl">
+            <div className="w-full lg:w-[65%] flex flex-col space-y-6 md:space-y-10 pointer-events-auto bg-black/40 backdrop-blur-sm p-5 md:p-12 border border-white/5 rounded-2xl">
                 <div className="space-y-2">
                     <p className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.5em]">SYSTEM INFO</p>
-                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter uppercase">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter uppercase">
                         About Me<span className="text-blue-500">.</span>
                     </h2>
                 </div>

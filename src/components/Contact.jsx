@@ -109,7 +109,7 @@ const Contact = () => {
       <div className="absolute inset-0 z-10 pointer-events-none bg-radial-vignette opacity-40" />
       <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(circle_at_50%_50%,transparent_0%,rgba(0,0,0,0.3)_100%)]" />
 
-      <div className="absolute inset-0 z-20 pointer-events-none p-10">
+      <div className="absolute inset-0 z-20 pointer-events-none p-4 md:p-10">
         <div className="absolute top-12 left-12">
           <motion.div
             animate={{ opacity: [0.3, 1, 0.3] }}
@@ -136,7 +136,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="relative z-50 w-full max-w-4xl px-6">
+      <div className="relative z-50 w-full max-w-4xl px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -144,7 +144,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="text-center mb-8">
-            <h2 className="text-6xl md:text-9xl font-black text-white uppercase tracking-tighter leading-none">
+            <h2 className="text-4xl sm:text-6xl md:text-9xl font-black text-white uppercase tracking-tighter leading-none">
               COMM<span className="text-blue-500 block sm:inline">.LINK</span>
             </h2>
             <div className="flex items-center justify-center space-x-2 text-blue-500/60 font-mono text-[9px] tracking-[0.6em] uppercase">
@@ -156,9 +156,9 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={sendEmail}
-            className="bg-white/[0.03] backdrop-blur-md border border-white/10 p-10 md:p-14 rounded-none shadow-[0_20px_50px_rgba(0,0,0,0.5)] space-y-10"
+            className="bg-white/[0.03] backdrop-blur-md border border-white/10 p-5 md:p-14 rounded-none shadow-[0_20px_50px_rgba(0,0,0,0.5)] space-y-6 md:space-y-10"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
               <div className="space-y-3">
                 <label className="text-[9px] font-mono font-bold uppercase tracking-[0.3em] text-blue-500/50 block ml-1">IDENT_SIGNATURE</label>
                 <input
@@ -166,7 +166,7 @@ const Contact = () => {
                   type="text"
                   placeholder="ENTER_NAME"
                   required
-                  className="w-full bg-white/5 border-b border-white/10 py-5 px-6 text-white text-[11px] outline-none focus:border-blue-600 transition-all placeholder:text-blue-950/20"
+                  className="w-full bg-white/5 border-b border-white/10 py-4 md:py-5 px-4 md:px-6 text-white text-[11px] outline-none focus:border-blue-600 transition-all placeholder:text-blue-950/20"
                 />
               </div>
               <div className="space-y-3">
@@ -176,7 +176,7 @@ const Contact = () => {
                   type="email"
                   placeholder="ENTER_EMAIL"
                   required
-                  className="w-full bg-white/5 border-b border-white/10 py-5 px-6 text-white text-[11px] outline-none focus:border-blue-600 transition-all placeholder:text-blue-950/20"
+                  className="w-full bg-white/5 border-b border-white/10 py-4 md:py-5 px-4 md:px-6 text-white text-[11px] outline-none focus:border-blue-600 transition-all placeholder:text-blue-950/20"
                 />
               </div>
             </div>
@@ -187,7 +187,7 @@ const Contact = () => {
                 name="message"
                 placeholder="INPUT_TRANSMISSION..."
                 required
-                className="w-full bg-white/5 border-b border-white/10 py-5 px-6 text-white text-[11px] outline-none focus:border-blue-600 transition-all min-h-[140px] resize-none placeholder:text-blue-950/20"
+                className="w-full bg-white/5 border-b border-white/10 py-4 md:py-5 px-4 md:px-6 text-white text-[11px] outline-none focus:border-blue-600 transition-all min-h-[120px] md:min-h-[140px] resize-none placeholder:text-blue-950/20"
               />
             </div>
 
@@ -196,7 +196,7 @@ const Contact = () => {
                 whileHover={{ scale: 1.05, boxShadow: "0 0 50px rgba(59,130,246,0.3)" }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="group flex items-center space-x-6 bg-blue-600 text-white font-black text-[11px] uppercase tracking-[0.6em] px-24 py-6 shadow-2xl transition-all"
+                className="group flex items-center space-x-4 md:space-x-6 bg-blue-600 text-white font-black text-[11px] uppercase tracking-[0.6em] px-12 md:px-24 py-6 shadow-2xl transition-all"
               >
                 <span>TRANSMIT</span>
                 <FiSend className="text-lg transition-transform group-hover:translate-x-1" />

@@ -298,17 +298,17 @@ export default function ProjectCaseStudy() {
     : caseStudyData.filter(p => p.category === activeCategory);
 
   return (
-    <section id="projects" className="bg-[#020202] py-24 px-6 md:px-12 lg:px-24">
+    <section id="projects" className="bg-[#020202] py-16 md:py-24 px-4 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-6 md:mb-12"
         >
           <p className="text-blue-500 font-mono tracking-[0.4em] uppercase text-[10px] mb-4">
             Project Showcase
           </p>
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 uppercase tracking-tighter">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 md:mb-8 uppercase tracking-tighter">
             Selected Works<span className="text-blue-500">.</span>
           </h2>
 
